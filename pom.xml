@@ -1,108 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<ns0:project xmlns:ns0="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <ns0:modelVersion>4.0.0</ns0:modelVersion>
 
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.0</version>
-        <relativePath/>
-    </parent>
+    <ns0:parent>
+        <ns0:groupId>org.springframework.boot</ns0:groupId>
+        <ns0:artifactId>spring-boot-starter-parent</ns0:artifactId>
+        <ns0:version>4.0.0</ns0:version>
+        <ns0:relativePath />
+    </ns0:parent>
 
-    <groupId>com.redhat</groupId>
-    <artifactId>lightwell-demo</artifactId>
-    <version>1.0.0</version>
-    <name>lightwell-demo</name>
-    <description>Simple Spring Boot hello service</description>
+    <ns0:groupId>com.redhat</ns0:groupId>
+    <ns0:artifactId>lightwell-demo</ns0:artifactId>
+    <ns0:version>1.0.0</ns0:version>
+    <ns0:name>lightwell-demo</ns0:name>
+    <ns0:description>Simple Spring Boot hello service</ns0:description>
 
-    <properties>
-        <java.version>17</java.version>
-        <maven.compiler.release>17</maven.compiler.release>
-    </properties>
+    <ns0:properties>
+        <ns0:java.version>17</ns0:java.version>
+        <ns0:maven.compiler.release>17</ns0:maven.compiler.release>
+    </ns0:properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20220320</version>
-        </dependency>
+    <ns0:dependencies>
+        <ns0:dependency>
+            <ns0:groupId>org.springframework.boot</ns0:groupId>
+            <ns0:artifactId>spring-boot-starter-webmvc</ns0:artifactId>
+        </ns0:dependency>
+        <ns0:dependency>
+            <ns0:groupId>org.json</ns0:groupId>
+            <ns0:artifactId>json</ns0:artifactId>
+            <ns0:version>20220320.0.0.rhlw-00003</ns0:version>
+        </ns0:dependency>
         
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+        <ns0:dependency>
+            <ns0:groupId>org.springframework.boot</ns0:groupId>
+            <ns0:artifactId>spring-boot-starter-test</ns0:artifactId>
+            <ns0:scope>test</ns0:scope>
+        </ns0:dependency>
+    </ns0:dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+    <ns0:build>
+        <ns0:plugins>
+            <ns0:plugin>
+                <ns0:groupId>org.springframework.boot</ns0:groupId>
+                <ns0:artifactId>spring-boot-maven-plugin</ns0:artifactId>
+            </ns0:plugin>
+        </ns0:plugins>
+    </ns0:build>
 
-    <profiles>
-        <profile>
-            <id>lightwell</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <repositories>
-                <repository>
-                    <id>lightwell-remediated</id>
-                    <name>Red Hat Lightwell Network - Remediated</name>
-                    <url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/remediated/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-                <repository>
-                    <id>lightwell-validated</id>
-                    <name>Red Hat Lightwell Network - Validated</name>
-                    <url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/validated/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>lightwell-remediated</id>
-                    <name>Red Hat Lightwell Network - Remediated</name>
-                    <url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/remediated/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>lightwell-validated</id>
-                    <name>Red Hat Lightwell Network - Validated</name>
-                    <url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/validated/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
-    </profiles>
-</project>
+    <ns0:profiles>
+        <ns0:profile>
+            <ns0:id>lightwell</ns0:id>
+            <ns0:activation>
+                <ns0:activeByDefault>true</ns0:activeByDefault>
+            </ns0:activation>
+            <ns0:repositories>
+                <ns0:repository>
+                    <ns0:id>lightwell-remediated</ns0:id>
+                    <ns0:name>Red Hat Lightwell Network - Remediated</ns0:name>
+                    <ns0:url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/remediated/</ns0:url>
+                    <ns0:releases>
+                        <ns0:enabled>true</ns0:enabled>
+                    </ns0:releases>
+                    <ns0:snapshots>
+                        <ns0:enabled>false</ns0:enabled>
+                    </ns0:snapshots>
+                </ns0:repository>
+                <ns0:repository>
+                    <ns0:id>lightwell-validated</ns0:id>
+                    <ns0:name>Red Hat Lightwell Network - Validated</ns0:name>
+                    <ns0:url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/validated/</ns0:url>
+                    <ns0:releases>
+                        <ns0:enabled>true</ns0:enabled>
+                    </ns0:releases>
+                    <ns0:snapshots>
+                        <ns0:enabled>false</ns0:enabled>
+                    </ns0:snapshots>
+                </ns0:repository>
+            </ns0:repositories>
+            <ns0:pluginRepositories>
+                <ns0:pluginRepository>
+                    <ns0:id>lightwell-remediated</ns0:id>
+                    <ns0:name>Red Hat Lightwell Network - Remediated</ns0:name>
+                    <ns0:url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/remediated/</ns0:url>
+                    <ns0:releases>
+                        <ns0:enabled>true</ns0:enabled>
+                    </ns0:releases>
+                    <ns0:snapshots>
+                        <ns0:enabled>false</ns0:enabled>
+                    </ns0:snapshots>
+                </ns0:pluginRepository>
+                <ns0:pluginRepository>
+                    <ns0:id>lightwell-validated</ns0:id>
+                    <ns0:name>Red Hat Lightwell Network - Validated</ns0:name>
+                    <ns0:url>https://packages.redhat.com/api/pulp-content/public-lightwell-demo/java/validated/</ns0:url>
+                    <ns0:releases>
+                        <ns0:enabled>true</ns0:enabled>
+                    </ns0:releases>
+                    <ns0:snapshots>
+                        <ns0:enabled>false</ns0:enabled>
+                    </ns0:snapshots>
+                </ns0:pluginRepository>
+            </ns0:pluginRepositories>
+        </ns0:profile>
+    </ns0:profiles>
+</ns0:project>
