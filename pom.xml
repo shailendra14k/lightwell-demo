@@ -104,3 +104,4 @@
         </ns0:profile>
     </ns0:profiles>
 </ns0:project>
+<!-- Lightwell remediation: org.json:json -> 20220320.0.0.rhlw-00003 (org.json:json not found in pom.xml) -->
